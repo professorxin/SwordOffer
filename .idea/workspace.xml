@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f815de-fcb2-4000-8d0a-4d11d0af6994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Offer05/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offer06/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,55 +50,60 @@
     <session id="-1457961763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="493" />
-          <entry key="txt" value="6" />
+          <entry key="java" value="774" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="493" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="774" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Offer05/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="616">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Offer04/Solution.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Offer06/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="330">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/Offer03/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer04/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer05/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer06/Solution.java" />
       </list>
     </option>
   </component>
@@ -152,13 +158,16 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -172,29 +181,16 @@
               <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SwordOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Offer04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SwordOffer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Offer05" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542208747075" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542253774275" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LeetCode" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -301,7 +297,8 @@
       <workItem from="1541079958808" duration="52000" />
       <workItem from="1541502607332" duration="2166000" />
       <workItem from="1541579204037" duration="31000" />
-      <workItem from="1542205659665" duration="2424000" />
+      <workItem from="1542205659665" duration="2607000" />
+      <workItem from="1542249950217" duration="3199000" />
     </task>
     <task id="LOCAL-00001" summary="10.31">
       <created>1540988897930</created>
@@ -324,17 +321,24 @@
       <option name="project" value="LOCAL" />
       <updated>1541506662496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11.14">
+      <created>1542208818173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542208818173</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14681000" />
+    <option name="totallyTimeSpent" value="18063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27444988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27811736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -374,7 +378,8 @@
     <MESSAGE value="10.31" />
     <MESSAGE value="11.1" />
     <MESSAGE value="11.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.6" />
+    <MESSAGE value="11.14" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.14" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/剑指Offer.iml" />
@@ -408,8 +413,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Offer05/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="616">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28259">
+          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Offer06/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
