@@ -26,11 +26,11 @@ public class Solution {
                 //以该结点进行判断是否包含tree2
                 result=doesTree1HaveTree2(root1,root2);
             }
-            //没有找到结点或者不包含，继续以tree1的左儿子作为起点
+            //没有找到相同的结点或者不包含，继续以tree1的左儿子作为起点
             if(!result){
                 result=HasSubtree(root1.left,root2);
             }
-            //没有找到结点或者不包含，继续以tree1的右儿子作为起点
+            //没有找到相同的结点或者不包含，继续以tree1的右儿子作为起点
             if(!result){
                 result=HasSubtree(root1.right,root2);
             }
