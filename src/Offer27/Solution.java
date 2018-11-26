@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 public class Solution {
     /*题目描述
     输入一个字符串,按字典序打印出该字符串中字符的所有排列。
@@ -15,6 +16,7 @@ public class Solution {
 
     //牛客网高分答案，采用回溯的思想
     //帮助理解的图片在images文件夹内
+
     public ArrayList<String> Permutation(String str) {
         //保存所需答案的集合
         List<String> res = new ArrayList<>();
