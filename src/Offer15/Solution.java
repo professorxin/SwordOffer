@@ -12,12 +12,12 @@ public class Solution {
         }
     }
 
-    /*运行超时:您的程序未能在规定时间内运行结束，请检查是否循环有错或算法复杂度过大。不懂*/
+    //A→B→c为例
+    /*第一次循环A的next为null,第二次循环B的next为A...*/
     public ListNode ReverseList(ListNode head) {
         if(head==null) return null;
-        ListNode after=head;
-        ListNode before=head;
-        head=head.next;
+        ListNode after=null;
+        ListNode before=null;
         while(head!=null){
             after=head.next;
             head.next=before;
