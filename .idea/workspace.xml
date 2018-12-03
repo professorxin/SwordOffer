@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f815de-fcb2-4000-8d0a-4d11d0af6994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Offer37/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Offer38/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Offer39/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offer47/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offer48/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SwordOffer/Offer15/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SwordOffer/Offer15/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Offer37/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Offer37/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Offer38/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Offer38/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Offer39/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Offer39/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,9 +57,9 @@
     <session id="-1457961763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="38" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="3" />
@@ -66,10 +67,12 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.48" value="4" />
           <entry key="project.open.time.49" value="4" />
           <entry key="project.open.time.5" value="1" />
@@ -77,42 +80,51 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.72" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6629" />
-          <entry key="txt" value="25" />
+          <entry key="java" value="6925" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6629" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="JAVA" value="6925" />
+          <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="134" />
+          <entry key="java" value="144" />
           <entry key="png" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="134" />
+          <entry key="JAVA" value="144" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Offer37/Solution.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Offer48/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="110">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Offer47/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -175,6 +187,10 @@
         <option value="$PROJECT_DIR$/src/Offer36/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer15/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer37/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer38/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer39/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer48/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer47/Solution.java" />
       </list>
     </option>
   </component>
@@ -381,8 +397,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -400,19 +414,27 @@
               <item name="SwordOffer" type="b2602c69:ProjectViewProjectNode" />
               <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Offer37" type="462c0819:PsiDirectoryNode" />
+              <item name="Offer47" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwordOffer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Offer48" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543467625152" />
-    <property name="last_opened_file_path" value="E:/Anyview/代码相似系统/系统源代码/CodeSimilarityCalculate/CodeSimilarityCalculate" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543842060631" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -569,7 +591,11 @@
       <workItem from="1543395136002" duration="5504000" />
       <workItem from="1543405777964" duration="3000" />
       <workItem from="1543411548948" duration="2194000" />
-      <workItem from="1543458836194" duration="4173000" />
+      <workItem from="1543458836194" duration="4202000" />
+      <workItem from="1543579757446" duration="4299000" />
+      <workItem from="1543629516069" duration="2103000" />
+      <workItem from="1543652013564" duration="256000" />
+      <workItem from="1543839833401" duration="1481000" />
     </task>
     <task id="LOCAL-00001" summary="10.31">
       <created>1540988897930</created>
@@ -718,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543413936105</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="11.29">
+      <created>1543468183453</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1543468183453</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110238000" />
+    <option name="totallyTimeSpent" value="118406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,7 +769,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.38875306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.40831295" />
       <window_info id="Structure" order="1" sideWeight="0.50167227" side_tool="true" weight="0.3099022" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -745,8 +778,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10650224" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35650223" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295964" />
@@ -817,7 +850,8 @@
     <MESSAGE value="11.26" />
     <MESSAGE value="11.27" />
     <MESSAGE value="11.28" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.28" />
+    <MESSAGE value="11.29" />
+    <option name="LAST_COMMIT_MESSAGE" value="11.29" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/剑指Offer.iml" />
@@ -1088,22 +1122,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Offer38/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Offer39/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="550">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Offer37/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="242">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Offer39/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Offer48/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Offer47/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
