@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f815de-fcb2-4000-8d0a-4d11d0af6994" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Offer56/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Offer60/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,7 +53,7 @@
     <session id="-1457961763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="47" />
+          <entry key="project.closed" value="48" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="1" />
@@ -69,7 +69,7 @@
           <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="2" />
+          <entry key="project.open.time.47" value="3" />
           <entry key="project.open.time.48" value="5" />
           <entry key="project.open.time.49" value="4" />
           <entry key="project.open.time.5" value="1" />
@@ -78,37 +78,37 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.72" value="1" />
-          <entry key="project.opened" value="48" />
+          <entry key="project.opened" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7848" />
-          <entry key="txt" value="34" />
+          <entry key="java" value="8005" />
+          <entry key="txt" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7848" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="JAVA" value="8005" />
+          <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="168" />
+          <entry key="java" value="174" />
           <entry key="png" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="168" />
+          <entry key="JAVA" value="174" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -172,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/Offer38/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer39/Solution.java" />
         <option value="$PROJECT_DIR$/src/Offer56/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Offer60/Solution.java" />
       </list>
     </option>
   </component>
@@ -378,7 +379,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -392,17 +393,23 @@
               <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SwordOffer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwordOffer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Offer60" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546527949779" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546614123069" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -573,7 +580,8 @@
       <workItem from="1544184734150" duration="145000" />
       <workItem from="1544352995826" duration="1493000" />
       <workItem from="1546526798203" duration="869000" />
-      <workItem from="1546566542877" duration="2697000" />
+      <workItem from="1546566542877" duration="2770000" />
+      <workItem from="1546611636332" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="10.31">
       <created>1540988897930</created>
@@ -757,11 +765,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544354691633</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2019.1.4">
+      <created>1546573110937</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1546573110937</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131494000" />
+    <option name="totallyTimeSpent" value="133873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,7 +790,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.25733498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.2603912" />
       <window_info id="Structure" order="1" sideWeight="0.50167227" side_tool="true" weight="0.3099022" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -892,7 +907,8 @@
     <MESSAGE value="12.5" />
     <MESSAGE value="12.6" />
     <MESSAGE value="12.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.9" />
+    <MESSAGE value="2019.1.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019.1.4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/剑指Offer.iml" />
@@ -907,13 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28259">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1213,6 +1222,42 @@
           <folding>
             <element signature="e#147#148#0" expanded="true" />
             <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="150" column="11" selection-start-line="150" selection-start-column="11" selection-end-line="150" selection-end-column="11" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6351#6352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10954">
+          <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="198" column="8" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Offer60/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#532#542#0" expanded="true" />
           </folding>
         </state>
       </provider>
