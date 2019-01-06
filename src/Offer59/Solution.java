@@ -1,9 +1,12 @@
 package Offer59;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 public class Solution {
+
+    /*题目描述
+请实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右至左的顺序打印，
+第三行按照从左到右的顺序打印，其他行以此类推。*/
 
     public class TreeNode {
         int val = 0;
@@ -53,5 +56,35 @@ public class Solution {
             }
         }
         return result;
+    }
+
+
+
+    //依旧使用queue来实现，需要反向的话直接把正向的进行反转即可
+    public ArrayList<ArrayList<Integer>> Print1(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(pRoot);
+        //用于控制序列正向还是反向
+        boolean reverse = false;
+        while (!queue.isEmpty()) {
+            ArrayList<Integer> list = new ArrayList<>();
+            int cnt = queue.size();
+            while (cnt-- > 0) {
+                TreeNode node = queue.poll();
+                if (node == null)
+                    continue;
+                list.add(node.val);
+                queue.add(node.left);
+                queue.add(node.right);
+            }
+            //这一步将正向的序列反向
+            if (reverse)
+                Collections.reverse(list);
+            reverse = !reverse;
+            if (list.size() != 0)
+                ret.add(list);
+        }
+        return ret;
     }
 }
