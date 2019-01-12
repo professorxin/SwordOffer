@@ -10,17 +10,17 @@ public class Solution {
 
     //本人思路，先把数组排序，有一个标识位来表示元素在数组中出现的次数，如果大于数组长度一半就返回。
     //但是排序的时间复杂度为O(n*logn)
-    public int MoreThanHalfNum_Solution(int [] array) {
-        if(array.length==1) return array[0];
+    public int MoreThanHalfNum_Solution(int[] array) {
+        if (array.length == 1) return array[0];
         Arrays.sort(array);
-        int length=array.length;
-        int index=1;
-        for(int i=1;i<length;i++){
-            if(array[i]==array[i-1]){
+        int length = array.length;
+        int index = 1;
+        for (int i = 1; i < length; i++) {
+            if (array[i] == array[i - 1]) {
                 index++;
-                if(index>length/2) return array[i];
-            }else{
-                index=1;
+                if (index > length / 2) return array[i];
+            } else {
+                index = 1;
             }
         }
         return 0;
@@ -53,9 +53,9 @@ public class Solution {
         return cnt > nums.length / 2 ? majority : 0;
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         //int[] nums=new int[]{1,2,3,2,2,2,5,4,2};
-        int[] nums=new int[]{2,2,2,2,3,3,3,5,6};
+        int[] nums = new int[]{2, 2, 2, 2, 3, 3, 3, 5, 6};
         new Solution().MoreThanHalfNum_Solution1(nums);
     }
 }

@@ -9,6 +9,7 @@ public class Solution {
         int val = 0;
         TreeNode left = null;
         TreeNode right = null;
+
         public TreeNode(int val) {
             this.val = val;
 
@@ -18,12 +19,12 @@ public class Solution {
 
     public int TreeDepth(TreeNode root) {
         //如果结点为空，返回0
-        if(root==null) return 0;
+        if (root == null) return 0;
         //二叉树的长度等于左子树长度+1；
-        int left=TreeDepth(root.left)+1;
+        int left = TreeDepth(root.left) + 1;
         //二叉树的长度等于右子树长度+1；
-        int right=TreeDepth(root.right)+1;
+        int right = TreeDepth(root.right) + 1;
         //对比该节点的左子树高度和右子树高度，返回大的值
-        return left>right?left:right;
+        return left > right ? left : right;
     }
 }

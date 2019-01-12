@@ -41,7 +41,6 @@ public class Solution {
     }
 
 
-
     /*两个不相等的元素在位级表示上必定会有一位存在不同，
     将数组的所有元素异或得到的结果为不存在重复的两个元素异或的结果。
 
@@ -53,15 +52,15 @@ public class Solution {
         int diff = 0;
         for (int num : nums)
             diff ^= num;
-        System.out.println("前:"+diff);
+        System.out.println("前:" + diff);
         diff &= -diff;
-        System.out.println("后:"+diff);
+        System.out.println("后:" + diff);
         for (int num : nums) {
             if ((num & diff) == 0)
                 num1[0] ^= num;
             else
                 num2[0] ^= num;
         }
-        System.out.println(num1[0]+"-----"+num2[0]);
+        System.out.println(num1[0] + "-----" + num2[0]);
     }
 }

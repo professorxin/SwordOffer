@@ -13,25 +13,25 @@ public class Solution {
     //暴力解法，复杂度应该是O(n^2)
     public int FindGreatestSumOfSubArray(int[] array) {
         //大顶堆
-        PriorityQueue<Integer> queue=new PriorityQueue<>(new Comparator<Integer>(){
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
-            public int compare(Integer o1,Integer o2){
-                return o2-o1;
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
             }
         });
-        int temp=0;
-        for(int i=0;i<array.length;i++){
-            for(int j=i;j<array.length;j++){
-                temp+=array[j];
+        int temp = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i; j < array.length; j++) {
+                temp += array[j];
                 queue.add(temp);
             }
-            temp=0;
+            temp = 0;
         }
         return queue.poll();
     }
 
-    public static void main(String args[]){
-        int[] array={1,-2,3,10,-4,7,2,-5};
+    public static void main(String args[]) {
+        int[] array = {1, -2, 3, 10, -4, 7, 2, -5};
         new Solution().FindGreatestSumOfSubArray(array);
     }
 

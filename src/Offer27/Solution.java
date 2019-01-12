@@ -26,7 +26,7 @@ public class Solution {
             //对集合的答案排序，形成字典序
             Collections.sort(res);
         }
-        return (ArrayList)res;
+        return (ArrayList) res;
     }
 
     public void PermutationHelper(char[] cs, int i, List<String> list) {
@@ -43,7 +43,7 @@ public class Solution {
                 //交换i和j位置对应的元素
                 swap(cs, i, j);
                 //递归调用函数，i+1的原因是交换完一次顺序i就加1，从而才能判断现在i是否在末尾
-                PermutationHelper(cs, i+1, list);
+                PermutationHelper(cs, i + 1, list);
                 //调用完成之后再将i和j调换，恢复之前的顺序来执行下一个for循环
                 swap(cs, i, j);
             }

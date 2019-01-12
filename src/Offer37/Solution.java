@@ -11,6 +11,7 @@ public class Solution {
         int last = binarySearch(nums, K + 1);
         return (first == nums.length || nums[first] != K) ? 0 : last - first;
     }
+
     //二分查找，注意观察边界的设定
     private int binarySearch(int[] nums, int K) {
         int l = 0, h = nums.length;
@@ -26,31 +27,31 @@ public class Solution {
         return l;
     }
 
-    public static void main(String args[]){
-        int[] array=new int[]{1,2,3,3,3,3};
-        System.out.println(new Solution().GetNumberOfK1(array,3));
+    public static void main(String args[]) {
+        int[] array = new int[]{1, 2, 3, 3, 3, 3};
+        System.out.println(new Solution().GetNumberOfK1(array, 3));
     }
 
 
     //自己重新写了一下，边界处理的不好
-    public int GetNumberOfK1(int [] array , int k) {
-        if(array.length==0) return 0;
-        int first=binarySearch(array,k);
-        int last=binarySearch(array,k+1);
+    public int GetNumberOfK1(int[] array, int k) {
+        if (array.length == 0) return 0;
+        int first = binarySearch(array, k);
+        int last = binarySearch(array, k + 1);
         //如果k存在数组的末尾，那么总数要加一
-        if(array[last]==k) return last-first+1;
-        return last-first;
+        if (array[last] == k) return last - first + 1;
+        return last - first;
     }
 
-    public int binarySearch1(int[] array,int k){
-        int index=0;
-        int end=array.length-1;
-        while(index<end){
-            int mid=(index+end)/2;
-            if(array[mid]>=k){
-                end=mid;
-            }else{
-                index=mid+1;
+    public int binarySearch1(int[] array, int k) {
+        int index = 0;
+        int end = array.length - 1;
+        while (index < end) {
+            int mid = (index + end) / 2;
+            if (array[mid] >= k) {
+                end = mid;
+            } else {
+                index = mid + 1;
             }
         }
         return index;

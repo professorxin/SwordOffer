@@ -10,14 +10,14 @@ public class Solution {
 
 
     public int FirstNotRepeatingChar(String str) {
-        int[] nums=new int['z'+1];
+        int[] nums = new int['z' + 1];
         //统计字符串每个字符的出现次数
-        for(int i=0;i<str.length();i++){
+        for (int i = 0; i < str.length(); i++) {
             nums[str.charAt(i)]++;
         }
         //第一个字符的次数为1时，返回位置
-        for(int i=0;i<str.length();i++){
-            if(nums[str.charAt(i)]==1){
+        for (int i = 0; i < str.length(); i++) {
+            if (nums[str.charAt(i)] == 1) {
                 return i;
             }
         }
