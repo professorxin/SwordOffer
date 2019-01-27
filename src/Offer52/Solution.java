@@ -7,4 +7,35 @@ public class Solution {
     配，但是与"aa.a"和"ab*a"均不匹配*/
 
 
+    //需要多看几遍
+    public boolean match(char[] str, char[] pattern) {
+
+        int m = str.length, n = pattern.length;
+        boolean[][] dp = new boolean[m + 1][n + 1];
+
+        dp[0][0] = true;
+        //初始化第一行
+        for (int i = 1; i <= n; i++)
+            if (pattern[i - 1] == '*')
+                dp[0][i] = dp[0][i - 2];
+
+        for (int i = 1; i <= m; i++)
+            for (int j = 1; j <= n; j++)
+                //不是*的情况，单字符匹配
+                if (str[i - 1] == pattern[j - 1] || pattern[j - 1] == '.')
+                    dp[i][j] = dp[i - 1][j - 1];
+                else if (pattern[j - 1] == '*')
+                    //是*的情况，要判断pattern[j - 2] 是否匹配当前 str[i - 1]
+                    //匹配的话有如下三种情况，pattern[j - 1]匹配空字符串，单一的str[i - 1]字符，多个str[i - 1]字符
+                    if (pattern[j - 2] == str[i - 1] || pattern[j - 2] == '.') {
+                        dp[i][j] |= dp[i][j - 1]; // a* counts as single a
+                        dp[i][j] |= dp[i - 1][j]; // a* counts as multiple a
+                        dp[i][j] |= dp[i][j - 2]; // a* counts as empty
+                    } else
+                        //不匹配的话pattern[j - 1]匹配空字符串
+                        dp[i][j] = dp[i][j - 2];   // a* only counts as empty
+
+        return dp[m][n];
+    }
+
 }
