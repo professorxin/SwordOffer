@@ -15,14 +15,14 @@ public class Solution {
     //A→B→c为例
     /*第一次循环A的next为null,第二次循环B的next为A...*/
     public ListNode ReverseList(ListNode head) {
-        if(head==null) return null;
-        ListNode after=null;
-        ListNode before=null;
-        while(head!=null){
-            after=head.next;
-            head.next=before;
-            before=head;
-            head=after;
+        if (head == null) return null;
+        ListNode after = null;
+        ListNode before = null;
+        while (head != null) {
+            after = head.next;
+            head.next = before;
+            before = head;
+            head = after;
         }
         return before;
     }
@@ -31,7 +31,7 @@ public class Solution {
     /*牛客网高票答案，思路一致*/
     public ListNode ReverseList1(ListNode head) {
 
-        if(head==null)
+        if (head == null)
             return null;
         //head为当前节点，如果当前节点为空的话，那就什么也不做，直接返回null；
         ListNode pre = null;
@@ -42,7 +42,7 @@ public class Solution {
         //所以需要用到pre和next两个节点
         //1->2->3->4->5
         //1<-2<-3 4->5
-        while(head!=null){
+        while (head != null) {
             //做循环，如果当前节点不为空的话，始终执行此循环，此循环的目的就是让当前节点从指向next到指向pre
             //如此就可以做到反转链表的效果
             //先用next保存head的下一个节点的信息，保证单链表不会因为失去head节点的原next节点而就此断裂
@@ -60,7 +60,7 @@ public class Solution {
     }
 
 
-    public static void main(String agrs[]){
+    public static void main(String agrs[]) {
 /*        ListNode node1=new ListNode(1);
         ListNode node2=new ListNode(2);
         ListNode node3=new ListNode(3);

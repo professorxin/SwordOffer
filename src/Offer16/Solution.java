@@ -15,16 +15,16 @@ public class Solution {
     }
 
     //利用递归
-    public ListNode Merge(ListNode list1,ListNode list2) {
+    public ListNode Merge(ListNode list1, ListNode list2) {
         //终结条件
-        if(list1==null) return list2;
-        if(list2==null) return list1;
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
         //如果list1的结点值小于list2的结点值，就先取到list1的结点值，list1后面的结点和list2递归
-        if(list1.val<=list2.val){
-            list1.next=Merge(list1.next,list2);
+        if (list1.val <= list2.val) {
+            list1.next = Merge(list1.next, list2);
             return list1;
-        }else{
-            list2.next=Merge(list1,list2.next);
+        } else {
+            list2.next = Merge(list1, list2.next);
             return list2;
         }
     }

@@ -6,22 +6,23 @@ public class Solution {
     所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。*/
 
     //我定义了头尾两个指针用于奇偶数字的交换，但是没有满足相对位置不变
-    public void reOrderArray(int [] array) {
-        int begin=0;
-        int end=array.length-1;
+    public void reOrderArray(int[] array) {
+        int begin = 0;
+        int end = array.length - 1;
         int temp;
-        while(begin<end){
-            while(begin<end&&array[begin]%2==1) begin++;
-            while(begin<end&&array[end]%2==0) end--;
-            if(begin<end){
-                temp=array[end];
-                array[end]=array[begin];
-                array[begin]=temp;
+        while (begin < end) {
+            while (begin < end && array[begin] % 2 == 1) begin++;
+            while (begin < end && array[end] % 2 == 0) end--;
+            if (begin < end) {
+                temp = array[end];
+                array[end] = array[begin];
+                array[begin] = temp;
             }
         }
     }
 
     //牛客网高票答案
+
     /**
      * 1.要想保证原有次序，则只能顺次移动或相邻交换。
      * 2.i从左向右遍历，找到第一个偶数。
@@ -29,29 +30,30 @@ public class Solution {
      * 4.将[i,...,j-1]的元素整体后移一位，最后将找到的奇数放入i位置，然后i++。
      * 5.終止條件：j向後遍歷查找失敗。
      */
-    public void reOrderArray2(int [] a) {
-        if(a==null||a.length==0)
+    public void reOrderArray2(int[] a) {
+        if (a == null || a.length == 0)
             return;
-        int i = 0,j;
-        while(i<a.length){
-            while(i<a.length&&!isEven(a[i]))
+        int i = 0, j;
+        while (i < a.length) {
+            while (i < a.length && !isEven(a[i]))
                 i++;
-            j = i+1;
-            while(j<a.length&&isEven(a[j]))
+            j = i + 1;
+            while (j < a.length && isEven(a[j]))
                 j++;
-            if(j<a.length){
+            if (j < a.length) {
                 int tmp = a[j];
-                for (int j2 = j-1; j2 >=i; j2--) {
-                    a[j2+1] = a[j2];
+                for (int j2 = j - 1; j2 >= i; j2--) {
+                    a[j2 + 1] = a[j2];
                 }
                 a[i++] = tmp;
-            }else{// 查找失敗
+            } else {// 查找失敗
                 break;
             }
         }
     }
-    boolean isEven(int n){
-        if(n%2==0)
+
+    boolean isEven(int n) {
+        if (n % 2 == 0)
             return true;
         return false;
     }

@@ -9,9 +9,9 @@ public class Solution {
     //牛客网高票答案
     /*斐波那契数列
     2*n的大矩形，和n个2*1的小矩形
-    其中target*2为大矩阵的大小
+    其中2*target为大矩阵的大小
     有以下几种情形：
-    target <= 0 大矩形为<= 2*0,直接return 1；
+    target <= 0 大矩形为<= 2*0,直接return 0；
     target = 1大矩形为2*1，只有一种摆放方法，return1；
     target = 2 大矩形为2*2，有两种摆放方法，return2；
     target = n 分为两步考虑：
@@ -23,7 +23,7 @@ public class Solution {
         }else if(target <= 2){
             return target;
         }else{
-            return RectCover((target-1))+RectCover(target-2);
+            return RectCover(target-1)+RectCover(target-2);
         }
     }
 }

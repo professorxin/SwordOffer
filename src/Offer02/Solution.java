@@ -8,11 +8,11 @@ public class Solution {
     //本人解法
     //利用辅助字符串构建，不优雅
     public String replaceSpace(StringBuffer str) {
-        StringBuffer temp=new StringBuffer();
-        for(int i=0;i<str.length();i++){
-            if(str.charAt(i)!=' '){
+        StringBuffer temp = new StringBuffer();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ') {
                 temp.append(str.charAt(i));
-            }else{
+            } else {
                 temp.append("%20");
             }
         }
@@ -51,8 +51,8 @@ public class Solution {
     }
 
 
-    public static void main(String[] args){
-        StringBuffer str=new StringBuffer("Hello World");
+    public static void main(String[] args) {
+        StringBuffer str = new StringBuffer("Hello World");
         System.out.println(new Solution().replaceSpace1(str));
     }
 }

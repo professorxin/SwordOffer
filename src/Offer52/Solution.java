@@ -8,6 +8,7 @@ public class Solution {
 
 
     //需要多看几遍
+    //设dp[i][j]为字符串str前i个字符与正则式pattern前j个字符的匹配结果，记m = str.length()，n = pattern.length()，因此所求最终结果为dp[m][n]。
     public boolean match(char[] str, char[] pattern) {
 
         int m = str.length, n = pattern.length;
@@ -36,6 +37,10 @@ public class Solution {
                         dp[i][j] = dp[i][j - 2];   // a* only counts as empty
 
         return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(0|0);
     }
 
 }

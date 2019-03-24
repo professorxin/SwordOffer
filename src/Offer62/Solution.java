@@ -19,19 +19,18 @@ public class Solution {
     }
 
     //第k小的结点就是二叉搜索树中序排列的第k个元素
-    TreeNode KthNode(TreeNode pRoot, int k)
-    {
-        ArrayList<TreeNode> list=new ArrayList<>();
-        middleOrder(list,pRoot);
-        if(k==0 || list.size()<k) return null;
-        return list.get(k-1);
+    TreeNode KthNode(TreeNode pRoot, int k) {
+        ArrayList<TreeNode> list = new ArrayList<>();
+        middleOrder(list, pRoot);
+        if (k == 0 || list.size() < k) return null;
+        return list.get(k - 1);
     }
 
     //中序排列
-    public void middleOrder(ArrayList<TreeNode> list,TreeNode pRoot){
-        if(pRoot==null) return;
-        middleOrder(list,pRoot.left);
+    public void middleOrder(ArrayList<TreeNode> list, TreeNode pRoot) {
+        if (pRoot == null) return;
+        middleOrder(list, pRoot.left);
         list.add(pRoot);
-        middleOrder(list,pRoot.right);
+        middleOrder(list, pRoot.right);
     }
 }

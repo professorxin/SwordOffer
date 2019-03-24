@@ -6,9 +6,9 @@ public class Solution {
     求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。*/
 
     public int JumpFloor(int target) {
-        if(target==1) return 1;
-        if(target==2) return 2;
-        return JumpFloor(target-1)+JumpFloor(target-2);
+        if (target == 1) return 1;
+        if (target == 2) return 2;
+        return JumpFloor(target - 1) + JumpFloor(target - 2);
     }
 
     /*牛客网其他解法，避免递归，提高效率*/
@@ -27,7 +27,7 @@ public class Solution {
         return f;
     }
 
-    public static void main(String args[]){
-        System.out.println(new Solution().JumpFloor(7));
+    public static void main(String args[]) {
+        System.out.println(new Solution().jumpFloor1(2));
     }
 }
