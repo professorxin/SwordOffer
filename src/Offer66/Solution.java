@@ -48,4 +48,26 @@ public class Solution {
             }
         }
     }
+
+
+    //另外的解法
+    public int movingCount1(int threshold, int rows, int cols) {
+        int[][] flag = new int[rows][cols];
+        return helper(0, 0, rows, cols, threshold, flag);
+    }
+
+    public int helper(int i, int j, int rows, int cols, int threshold, int[][] flag) {
+        if (i < 0 || i >= rows || j < 0 || j >= cols || sum(i) + sum(j) > threshold || flag[i][j] == 1) return 0;
+        flag[i][j] = 1;
+        return helper(i + 1, j, rows, cols, threshold, flag) + helper(i, j + 1, rows, cols, threshold, flag) + 1;
+    }
+
+    public int sum(int num) {
+        int sum = 0;
+        while (num != 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
 }

@@ -37,17 +37,17 @@ public class Solution {
 
     依次执行，最后辅助栈为空。如果不为空说明弹出序列不是该栈的弹出顺序。*/
 
-    public boolean IsPopOrder(int [] pushA,int [] popA) {
-        if(pushA==null||popA==null) return false;
+    public boolean IsPopOrder(int[] pushA, int[] popA) {
+        if (pushA == null || popA == null) return false;
         //构建辅助栈
-        Stack<Integer> stack=new Stack<Integer>();
+        Stack<Integer> stack = new Stack<Integer>();
         //弹出栈的序列标识位
-        int popIndex=0;
+        int popIndex = 0;
         //遍历入栈顺序
-        for(int i=0;i<pushA.length;i++){
+        for (int i = 0; i < pushA.length; i++) {
             stack.push(pushA[i]);
             //判断辅助栈是否为空和辅助栈的栈顶元素是否和出栈顺序的标识位的元素相同
-            while(!stack.empty()&&stack.peek()==popA[popIndex]){
+            while (!stack.empty() && stack.peek() == popA[popIndex]) {
                 //相同就出栈，并且标识位+1，通过while循环继续判断
                 stack.pop();
                 popIndex++;

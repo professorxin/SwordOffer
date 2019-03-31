@@ -14,7 +14,6 @@ public class Solution {
             this.val = val;
 
         }
-
     }
 
     //定义一个先前指针，指向的是当前有序链表的最末尾元素
