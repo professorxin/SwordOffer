@@ -12,6 +12,7 @@ public class Solution {
     public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers == null || length <= 0) return false;
         for (int m = 0; m < length; m++) {
+
             while (m != numbers[m]) {
                 if (numbers[m] == numbers[numbers[m]]) {
                     duplication[0] = numbers[m];
@@ -30,10 +31,10 @@ public class Solution {
     }
 
 
-    public static void main(String args[]){
-        int numbers[]=new int[]{1,2,3,4,1};
-        int duplication[]=new int[]{0};
-        System.out.println(new Solution().duplicate(numbers,5,duplication));
+    public static void main(String args[]) {
+        int numbers[] = new int[]{1, 3, 4, 3};
+        int duplication[] = new int[]{0};
+        System.out.println(new Solution().duplicate(numbers, 4, duplication));
 
     }
 }

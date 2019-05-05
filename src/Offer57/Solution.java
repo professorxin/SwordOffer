@@ -48,16 +48,21 @@ public class Solution {
 
     //思路相同，节省了一个条件判断，更加简洁
     public TreeLinkNode GetNext1(TreeLinkNode pNode) {
+        //如果节点的右孩子不为空
         if (pNode.right != null) {
             TreeLinkNode node = pNode.right;
+            //右孩子如果有左节点，一直找到最深的左结点就是中序遍历的下一个节点
             while (node.left != null)
                 node = node.left;
             return node;
         } else {
+            //寻找父节点
             while (pNode.next != null) {
                 TreeLinkNode parent = pNode.next;
+                //关键一步，父节点的左孩子等于自己才能表示父节点是中序遍历的下一个节点
                 if (parent.left == pNode)
                     return parent;
+                //不满足的话继续寻找
                 pNode = pNode.next;
             }
         }

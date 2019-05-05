@@ -19,12 +19,15 @@ public class Solution {
     }
 
     ArrayList<ArrayList<Integer> > Print(TreeNode pRoot) {
+        //定义一个总的集合
         ArrayList<ArrayList<Integer>> list=new ArrayList<>();
+        //定义一个队列保存节点
         Queue<TreeNode> queue =new LinkedList<TreeNode>();
         queue.add(pRoot);
         while(!queue.isEmpty()){
             ArrayList<Integer> result=new ArrayList<>();
             int size=queue.size();
+            //添加队列中保存的每一层的节点
             while(size-- >0){
                 TreeNode node=queue.poll();
                 if(node==null){
