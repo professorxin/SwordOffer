@@ -7,14 +7,14 @@ public class Solution {
 
     //很暴力的解法，找到了数学规律
     public int JumpFloorII(int target) {
-        if(target<=0) return 0;
-        if(target==1) return 1;
-        if(target==2) return 2;
-        int temp=3,all_ways=0;
-        for(int i=2;i<target;i++){
-            all_ways+=temp;
-            temp=all_ways;
-            all_ways+=1;
+        if (target <= 0) return 0;
+        if (target == 1) return 1;
+        if (target == 2) return 2;
+        int temp = 3, all_ways = 0;
+        for (int i = 2; i < target; i++) {
+            all_ways += temp;
+            temp = all_ways;
+            all_ways += 1;
         }
         return all_ways;
     }

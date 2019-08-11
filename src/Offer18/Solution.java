@@ -42,6 +42,4 @@ public class Solution {
             if (root.right != null) Mirror(root.right);
         }
     }
-
-
 }

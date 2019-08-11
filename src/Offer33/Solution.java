@@ -10,6 +10,7 @@ public class Solution {
     public int GetUglyNumber_Solution(int index) {
         if (index <= 6) return index;
         int[] nums = new int[index];
+        nums[0] = 1;
         int i2 = 0, i3 = 0, i5 = 0;
         for (int i = 1; i < index; i++) {
             int next2 = nums[i2] * 2, next3 = nums[i3] * 3, next5 = nums[i5] * 5;
