@@ -12,7 +12,6 @@ public class Solution {
     public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers == null || length <= 0) return false;
         for (int m = 0; m < length; m++) {
-
             while (m != numbers[m]) {
                 if (numbers[m] == numbers[numbers[m]]) {
                     duplication[0] = numbers[m];

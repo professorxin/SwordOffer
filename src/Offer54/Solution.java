@@ -23,9 +23,4 @@ public class Solution {
         return '#';
     }
 
-
-    public static void main(String args[]) {
-
-    }
-
 }

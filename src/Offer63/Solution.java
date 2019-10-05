@@ -10,56 +10,55 @@ public class Solution {
 如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
 我们使用Insert()方法读取数据流，使用GetMedian()方法获取当前读取数据的中位数。*/
 
-    private PriorityQueue<Integer> maxHeap=new PriorityQueue<Integer>(new Comparator<Integer>(){
+    private PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
         @Override
-        public int compare(Integer o1,Integer o2){
+        public int compare(Integer o1, Integer o2) {
             return o2.compareTo(o1);
         }
     });
-    private PriorityQueue<Integer> minHeap=new PriorityQueue<Integer>(new Comparator<Integer>(){
+    private PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
         @Override
-        public int compare(Integer o1,Integer o2){
+        public int compare(Integer o1, Integer o2) {
             return o1.compareTo(o2);
         }
     });
 
     public void Insert(Integer num) {
-        if(maxHeap.size()==0&&minHeap.size()==0){
+        if (maxHeap.size() == 0 && minHeap.size() == 0) {
             maxHeap.offer(Integer.MIN_VALUE);
             minHeap.offer(Integer.MAX_VALUE);
         }
-        if(num>maxHeap.peek()){
+        if (num > maxHeap.peek()) {
             minHeap.offer(num);
-        }else{
+        } else {
             maxHeap.offer(num);
         }
-        if(maxHeap.size()-minHeap.size()==2){
+        if (maxHeap.size() - minHeap.size() == 2) {
             minHeap.offer(maxHeap.poll());
         }
-        if(minHeap.size()-maxHeap.size()==2){
+        if (minHeap.size() - maxHeap.size() == 2) {
             maxHeap.offer(minHeap.poll());
         }
     }
 
     public Double GetMedian() {
-        if((maxHeap.size()+minHeap.size())%2==1){
-            if(maxHeap.size()>minHeap.size()){
-                return maxHeap.peek()*1.0;
-            }else{
-                return minHeap.peek()*1.0;
+        if ((maxHeap.size() + minHeap.size()) % 2 == 1) {
+            if (maxHeap.size() > minHeap.size()) {
+                return maxHeap.peek() * 1.0;
+            } else {
+                return minHeap.peek() * 1.0;
             }
-        }else{
-            return (maxHeap.peek()+minHeap.peek())*1.0/2;
+        } else {
+            return (maxHeap.peek() + minHeap.peek()) * 1.0 / 2;
         }
     }
 
 
-    public static void main(String args[]){
-        Solution s=new Solution();
+    public static void main(String args[]) {
+        Solution s = new Solution();
         s.Insert(5);
         System.out.println(s.GetMedian());
     }
-
 
 
     //同样的思路，更简洁

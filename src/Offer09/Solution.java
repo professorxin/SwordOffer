@@ -17,6 +17,7 @@ public class Solution {
         return array[0];
     }
 
+
     /*参考剑指offer书籍采用了二分查找*/
     public int minNumberInRotateArray1(int[] array) {
         if (array.length == 0) return 0;
